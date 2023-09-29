@@ -44,12 +44,3 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
         if: always()
-
-  revert-last-commit:
-    needs: deploy  # Ensure the "deploy" job runs first
-    runs-on: ubuntu-latest
-    steps:
-      - name: Revert to Last Commit
-        run: |
-          git reset --hard HEAD^
-          git push -f origin main
