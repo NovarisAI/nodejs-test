@@ -1,4 +1,4 @@
-name: Revert pushed commit
+name: Revert-pushed-commit
 permissions:
   issues: write
   actions: write
