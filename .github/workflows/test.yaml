@@ -1,5 +1,6 @@
 name: RevertandDeploy
 permissions:
+  workflows: write
   issues: write
   actions: write
   checks: write
