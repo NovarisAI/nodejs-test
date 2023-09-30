@@ -1,4 +1,4 @@
-name: Revert-pushed-commit
+name: RevertandDeploy
 permissions:
   issues: write
   actions: write
