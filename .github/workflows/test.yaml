@@ -30,7 +30,7 @@ jobs:
         with:
            ref: ${{ github.event.inputs.branch }}
            fetch-depth: 0
-           token: ${{ secrets.ACCESS_TOKEN }}
+           # token: ${{ secrets.ACCESS_TOKEN }}
       - name: Revert pushed commit
         run: |
           git config --global user.name 'github-actions[bot]'
